@@ -1,0 +1,37 @@
+{
+  "name": "rollup-lib-ts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "typings": "./dist/typings/index.d.ts",
+  "unpkg": "./dist/umd/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "babel": "npx babel-cli dist/esm --out-dir dist/esm",
+    "build": "npm run clean && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && webpack --config ./webpack/webpack.config.js",
+    "prepublish": "npm run build"
+  },
+  "author": "David López Castellote <david.lopez.castellote@gmail.com> (https://github.com/Dellos7)",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "babel-loader": "^8.1.0",
+    "create-file-webpack": "^1.0.2",
+    "rollup": "^2.18.0",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}

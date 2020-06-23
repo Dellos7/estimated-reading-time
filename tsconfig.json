@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2015", // Afecta al código en general
+    "module": "es2015", // Afecta únicamente a la forma de exportar los módulos (export o module.exports...)
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist/esm", // Donde emitimos el output de la compilación
+    "declaration": true, // Generará los ficheros de tipos
+    "declarationDir": "./dist/typings/" // Generará los ficheros de tipos en esta ruta
+  },
+  "include": [
+    "./src" // Compilar los archivos de esta ruta
+  ]
+}
