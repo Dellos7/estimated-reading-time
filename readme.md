@@ -6,7 +6,52 @@ Calculate the estimated reading time of a given text (plain text or HTML)
 
 ## Usage:
 
+### Browser
+
+Using the package in the browser, all the functions are encapsulated inside the **`EstimatedReadingTime`** global object.
+
+#### Plain text
+
+```html
+<script defer type="text/javascript" src="https://unpkg.com/estimated-reading-time@latest/dist/umd/index.js"></script>
+```
+
+```html
+<script>
+  const plainText = `En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda....`; // Longer text
+  const res = EstimatedReadingTime.estimatedReadingTime(plainText, 'plain_text', { isTechnical: false } );
+  console.log(res);
+</script>
+```
+
+`res`:
+
+```json
+{
+  numWords: 1876,
+  minutes: 7,
+  seconds: 31,
+  roundedMinutes: 8
+}
+```
+
+#### HTML
+
 > TODO
+
+### Node (CommonJS)
+
+> TODO
+
+### Node (ESM)
+
+> TODO
+
+### TypeScript
+
+> TODO
+
+- - - 
 
 `package.json`:
 
