@@ -1,3 +1,13 @@
+![.github/workflows/publish-to-npm.yml](https://github.com/Dellos7/estimated-reading-time/workflows/Test%20and%20NPM%20publish/badge.svg)
+
+# estimated-reading-time
+
+Calculate the estimated reading time of a given text (plain text or HTML)
+
+## Usage:
+
+> TODO
+
 `package.json`:
 
 ```json

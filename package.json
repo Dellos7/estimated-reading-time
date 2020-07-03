@@ -28,8 +28,6 @@
     "prepublish": "npm run build",
     "test": "mocha"
   },
-  "author": "David López Castellote <david.lopez.castellote@gmail.com> (https://github.com/Dellos7)",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.4",
@@ -43,5 +41,22 @@
   },
   "dependencies": {
     "node-html-parser": "^1.2.19"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dellos7/estimated-reading-time.git"
+  },
+  "author": "David López Castellote",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dellos7/estimated-reading-time/issues"
+  },
+  "homepage": "https://github.com/Dellos7/estimated-reading-time#readme",
+  "keywords": [
+    "estimate",
+    "estimated",
+    "reading time",
+    "reading",
+    "time"
+  ]
 }
