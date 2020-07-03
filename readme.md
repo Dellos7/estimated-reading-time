@@ -2,12 +2,12 @@
 
 ```json
 {
-  "name": "rollup-lib-ts",
+  "name": "estimated-reading-time",
   "version": "0.0.1",
   "description": "",
   "main": "./dist/cjs/index.js", // Por defecto resolverá al fichero de CommonJS
   "module": "./dist/esm/index.js", // Para módulos de ES utiliza este fichero (utilizado por Webpack)
-  "typings": "./dist/typings/index.d.ts", // Los tipos están en esta ruta
+  "types": "./dist/typings/index.d.ts", // Los tipos están en esta ruta
   "unpkg": "./dist/umd/index.js",
   "exports": { // Exportaciones condicionales
     ".": {

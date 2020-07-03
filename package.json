@@ -1,10 +1,10 @@
 {
-  "name": "rollup-lib-ts",
+  "name": "estimated-reading-time",
   "version": "0.0.1",
-  "description": "",
+  "description": "Calculate the estimated reading time of a given text (plain text or HTML)",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
-  "typings": "./dist/typings/index.d.ts",
+  "types": "./dist/typings/index.d.ts",
   "unpkg": "./dist/umd/index.js",
   "exports": {
     ".": {
@@ -18,20 +18,30 @@
   ],
   "scripts": {
     "clean": "rm -rf dist/*",
-    "babel": "npx babel-cli dist/esm --out-dir dist/esm",
-    "build": "npm run clean && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && webpack --config ./webpack/webpack.config.js",
-    "prepublish": "npm run build"
+    "start": "npm run clean && npm run tsc && npm run webpack:dev",
+    "webpack:dev": "webpack --config ./webpack/webpack.config.js --mode development",
+    "webpack:prod": "webpack --config ./webpack/webpack.config.js --mode production",
+    "tsc:esm": "tsc -p tsconfig.json",
+    "tsc:cjs": "tsc -p tsconfig-cjs.json",
+    "tsc": "npm run tsc:esm && npm run tsc:cjs",
+    "build": "npm run clean && npm run tsc && npm run webpack:prod",
+    "prepublish": "npm run build",
+    "test": "mocha"
   },
   "author": "David López Castellote <david.lopez.castellote@gmail.com> (https://github.com/Dellos7)",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.3",
-    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-env": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "chai": "^4.2.0",
     "create-file-webpack": "^1.0.2",
-    "rollup": "^2.18.0",
+    "mocha": "^8.0.1",
     "typescript": "^3.9.5",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "node-html-parser": "^1.2.19"
   }
 }

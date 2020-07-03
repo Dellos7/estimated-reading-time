@@ -1,0 +1,4 @@
+extension:
+  - 'js'
+  - 'mjs'
+spec: 'test/**/*.test.*js'

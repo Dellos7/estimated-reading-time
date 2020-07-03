@@ -7,9 +7,12 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist/esm", // Donde emitimos el output de la compilación
     "declaration": true, // Generará los ficheros de tipos
-    "declarationDir": "./dist/typings/" // Generará los ficheros de tipos en esta ruta
+    "declarationDir": "./dist/typings/", // Generará los ficheros de tipos en esta ruta
+    "moduleResolution": "node"
   },
   "include": [
-    "./src" // Compilar los archivos de esta ruta
-  ]
+    //"./src" // Compilar los archivos de esta ruta
+    "src/**/*"
+  ],
+  "exclude": [ "node_modules", "**/*.spec.ts", "**/*.test.ts" ]
 }
