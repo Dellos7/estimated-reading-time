@@ -1,6 +1,6 @@
 {
   "name": "estimated-reading-time",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Calculate the estimated reading time of a given text (plain text or HTML)",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
