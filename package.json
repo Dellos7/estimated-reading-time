@@ -25,7 +25,7 @@
     "tsc:cjs": "tsc -p tsconfig-cjs.json",
     "tsc": "npm run tsc:esm && npm run tsc:cjs",
     "build": "npm run clean && npm run tsc && npm run webpack:prod",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "test": "mocha"
   },
   "devDependencies": {

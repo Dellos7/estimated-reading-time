@@ -4,8 +4,7 @@ export const parse = nodeHtmlParser.parse || (nodeHtmlParser.default as any).par
 
 export function wordCountHtml( html: string ){
     const root = parse( html, { pre: true } );
-
-    const _wordCountHtml =  ( node: any ): number => {
+    const _wordCountHtml = ( node: any ): number => {
         let numWords = 0;
         if( node.nodeType != 8 ){ // Comment node
             if( node.tagName == 'pre' ){
