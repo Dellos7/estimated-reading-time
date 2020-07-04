@@ -43,6 +43,8 @@ npm i estimated-reading-time
 
 ### Browser
 
+> [Try out the full working example](https://dlopezcastellote.dev/estimated-reading-time/examples/browser/)
+
 ```html
 <script defer type="text/javascript" src="https://unpkg.com/estimated-reading-time@latest/dist/umd/index.js"></script>
 ```
