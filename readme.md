@@ -1,4 +1,4 @@
-![.github/workflows/publish-to-npm.yml](https://github.com/Dellos7/estimated-reading-time/workflows/Test%20and%20NPM%20publish/badge.svg)
+![.github/workflows/publish-to-npm.yml](https://github.com/Dellos7/estimated-reading-time/workflows/Test%20and%20NPM%20publish/badge.svg) [![npm version](https://badge.fury.io/js/estimated-reading-time.svg)](https://badge.fury.io/js/estimated-reading-time)
 
 # estimated-reading-time
 
@@ -52,7 +52,7 @@ Using the package in the browser, all the functions are encapsulated inside the 
 
 #### Plain text
 
-```javascript
+```html
 <script>
   // Suppose longer text
   const plainText = `En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda....`;
@@ -74,7 +74,7 @@ Using the package in the browser, all the functions are encapsulated inside the 
 
 #### HTML
 
-```javascript
+```html
 <script>
   const htmlText = `
     <div class="content">
